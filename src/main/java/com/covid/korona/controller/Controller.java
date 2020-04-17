@@ -15,7 +15,7 @@ public class Controller {
         this.pageParser = pageParser;
     }
 
-    @GetMapping(path = "/")
+    @GetMapping(path = "/getstat")
     public Response sendMessage(){
         try {
             return pageParser.getDailyStat();
